@@ -1,0 +1,31 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyNamespace\{{ModelName}};
+use {{InterfaceNamespace}}\{{InterfaceName}};
+
+class DummyClass implements {{InterfaceName}}
+{
+    private $eloquent;
+
+    public function __construct({{ModelName}} $eloquent)
+    {
+        $this->eloquent = $eloquent;
+    }
+
+    public function find($id)
+    {
+        return $this->eloquent->find($id);
+    }
+
+    public function all()
+    {
+        return $this->eloquent->all();
+    }
+
+    public function newEmptyInstance()
+    {
+        return $this->eloquent->newInstance();
+    }
+}

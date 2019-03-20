@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+interface DummyClass
+{
+    public function all();
+    public function find($id);
+    public function newEmptyInstance();
+}
