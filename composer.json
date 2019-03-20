@@ -1,0 +1,15 @@
+{
+    "name": "canoastec/code-generator",
+    "description": "Code generator for CANOASTEC common things",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+      "php": ">=5.4",
+      "illuminate/console": "*",
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeGenerator\\": "src"
+        }
+    },
+}

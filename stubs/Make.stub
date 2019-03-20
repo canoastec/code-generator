@@ -1,0 +1,29 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Console\GeneratorCommand;
+
+class DummyClass extends GeneratorCommand
+{
+    protected $name = 'make:name';
+
+    protected $description = 'Make a {{Type}} command';
+
+    protected $type = '{{Type}}';
+
+    protected function getDefaultNamespace($rootNamespace)
+    {
+        return $rootNamespace . '\Console\Commands';
+    }
+
+    protected function getStub()
+    {
+        return __DIR__.'/stub/Stub.stub';
+    }
+
+    protected function buildClass($name)
+    {
+        return parent::buildClass($name);
+    }
+}

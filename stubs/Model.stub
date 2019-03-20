@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Yajra\Oci8\Eloquent\OracleEloquent;
+
+class DummyClass extends OracleEloquent implements DummyClassInterface
+{
+    //
+}

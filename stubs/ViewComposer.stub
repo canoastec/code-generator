@@ -1,0 +1,25 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyNamespace\ViewComposerInterface;
+use DummyNamespace\ViewComposerTrait;
+
+class DummyClass implements ViewComposerInterface
+{
+    use ViewComposerTrait;
+
+    public function __construct()
+    {
+    }
+
+    public function getData()
+    {
+        return [];
+    }
+
+    public function getVariableName()
+    {
+        return '{{VariableName}}';
+    }
+}
