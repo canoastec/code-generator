@@ -3,6 +3,7 @@
 namespace CodeGenerator\Commands;
 
 use Illuminate\Console\GeneratorCommand;
+use Symfony\Component\Console\Input\InputArgument;
 
 class RepositoryBindingsMakeCommand extends GeneratorCommand
 {
@@ -65,7 +66,7 @@ class RepositoryBindingsMakeCommand extends GeneratorCommand
     protected function getArguments()
     {
         return [
-            ['entity', 1, 'The name of the entity for make binding of the repository']
+            ['entity', InputArgument::REQUIRED, 'The name of the entity for make binding of the repository']
         ];
     }
 
