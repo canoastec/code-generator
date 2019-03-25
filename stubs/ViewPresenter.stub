@@ -1,0 +1,26 @@
+<?php
+
+namespace DummyNamespace;
+
+use JsonSerializable;
+use Illuminate\Contracts\Support\Arrayable;
+
+class DummyClass implements Arrayable, JsonSerializable
+{
+    public function __construct()
+    {
+
+    }
+
+    public function toArray()
+    {
+        return [
+
+        ];
+    }
+
+    public function jsonSerialize()
+    {
+        return $this->toArray();
+    }
+}
