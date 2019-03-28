@@ -1,0 +1,15 @@
+@extends('layout.default')
+
+@section('breadcrumb')
+	{{-- {!! Breadcrumbs::render('home') !!} --}}
+@stop
+
+@section('content')	
+
+@stop
+
+@push('final-scripts')
+	<script>
+		
+	</script>
+@endpush

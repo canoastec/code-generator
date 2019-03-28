@@ -1,0 +1,6 @@
+<div class="col-md-3">
+	<div class="form-group">
+		{!! Form::label('input') !!}
+		{!! Form::text('input', null, ['class' => 'form-control']) !!}
+	</div>
+</div>

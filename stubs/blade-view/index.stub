@@ -1,0 +1,23 @@
+@extends(
+	'layout.templates.lists.crud-list', [
+	'modelRoute' => '{{ModelRoute}}',
+	'collection' => collect(),
+	'tableId' => null,
+	'returnTo' => null
+])
+
+@section('filter-content')
+
+@stop
+
+@section('table-header')
+
+@stop
+
+@section('table-content')
+
+@stop
+
+@push('final-scripts')
+
+@endpush
