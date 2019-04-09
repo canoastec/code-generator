@@ -20,7 +20,7 @@ class MakeMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/../stubs/Make.stub';
+        return __DIR__.'/../../stubs/Make.stub';
     }
 
     protected function buildClass($name)

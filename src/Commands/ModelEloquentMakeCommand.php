@@ -21,7 +21,7 @@ class ModelEloquentMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/stub/ModelEloquent.stub';
+        return __DIR__.'/../../stubs/ModelEloquent.stub';
     }
 
     protected function buildClass($name)
@@ -35,7 +35,7 @@ class ModelEloquentMakeCommand extends GeneratorCommand
 
     protected function replaceNameTable(&$stub, $table)
     {
-        if(empty($table)) 
+        if(empty($table))
             $table = strtolower($this->argument('name'));
 
         $stub = str_replace('{{NameTable}}', $table, $stub);

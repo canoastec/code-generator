@@ -19,7 +19,7 @@ class ModelInterfaceMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/stub/ModelInterface.stub';
+        return __DIR__.'/../../stubs/ModelInterface.stub';
     }
 
     protected function buildClass($name)

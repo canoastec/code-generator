@@ -19,7 +19,7 @@ class ServiceMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/../stubs/Service.stub';
+        return __DIR__.'/../../stubs/Service.stub';
     }
 
     protected function buildClass($name)

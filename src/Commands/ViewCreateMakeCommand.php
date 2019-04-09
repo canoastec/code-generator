@@ -11,15 +11,15 @@ class ViewCreateMakeCommand extends GeneratorCommand
 
     protected $description = 'Make a View Create command';
 
-    protected $type = 'View Create';    
+    protected $type = 'View Create';
 
     protected function getStub()
     {
-        return __DIR__.'/../stub/blade-view/create.stub';
+        return __DIR__.'/../../stubs/blade-view/create.stub';
     }
 
     protected function replaceModelRouteName(&$stub, $name)
-    {        
+    {
         $stub = str_replace('{{ModelRoute}}', $name, $stub);
         return $this;
     }
@@ -36,7 +36,7 @@ class ViewCreateMakeCommand extends GeneratorCommand
     }
 
     protected function buildClass($name)
-    {       
+    {
         $stub = parent::buildClass($name);
 
         if (empty($this->argument('modelRoute'))){

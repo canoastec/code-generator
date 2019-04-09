@@ -14,7 +14,7 @@ class ViewComposerMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__ . '/../stubs/ViewComposer.stub';
+        return __DIR__.'/../../stubs/ViewComposer.stub';
     }
 
     protected function getDefaultNamespace($rootNamespace)

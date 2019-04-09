@@ -19,7 +19,7 @@ class DaoMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/../stubs/DAO.stub';
+        return __DIR__.'/../../stubs/DAO.stub';
     }
 
     protected function buildClass($name)

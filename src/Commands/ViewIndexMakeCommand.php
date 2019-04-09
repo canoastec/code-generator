@@ -15,7 +15,7 @@ class ViewIndexMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/../stub/blade-view/index.stub';
+        return __DIR__.'/../../stubs/blade-view/index.stub';
     }    
 
     protected function replaceModelRouteName(&$stub, $name)

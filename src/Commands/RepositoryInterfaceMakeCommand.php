@@ -19,7 +19,7 @@ class RepositoryInterfaceMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/stub/RepositoryInterface.stub';
+        return __DIR__.'/../../stubs/RepositoryInterface.stub';
     }
 
     protected function buildClass($name)

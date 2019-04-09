@@ -33,7 +33,7 @@ class RepositoryMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/stub/Repository.stub';
+        return __DIR__.'/../../stubs/Repository.stub';
     }
 
     protected function buildClass($name)

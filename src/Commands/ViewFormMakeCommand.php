@@ -14,7 +14,7 @@ class ViewFormMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/../stub/blade-view/form.stub';
+        return __DIR__.'/../../stubs/blade-view/form.stub';
     }    
 
     protected function getPath($name)

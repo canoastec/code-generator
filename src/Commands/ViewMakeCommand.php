@@ -14,7 +14,7 @@ class ViewMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/../stub/blade-view/default.stub';
+        return __DIR__.'/../../stubs/blade-view/default.stub';
     }
 
     protected function buildClass($name)

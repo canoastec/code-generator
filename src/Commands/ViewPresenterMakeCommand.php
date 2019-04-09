@@ -19,7 +19,7 @@ class ViewPresenterMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/stub/ViewPresenter.stub';
+        return __DIR__.'/../../stubs/ViewPresenter.stub';
     }
 
     protected function buildClass($name)

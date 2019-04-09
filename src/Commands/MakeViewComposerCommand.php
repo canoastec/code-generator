@@ -19,7 +19,7 @@ class MakeViewComposerCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return __DIR__.'/../stubs/ViewComposer.stub';
+        return __DIR__.'/../../stubsViewComposer.stub';
     }
 
     protected function buildClass($name)
