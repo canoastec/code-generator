@@ -5,7 +5,4 @@ namespace DummyNamespace;
 interface DummyClass
 {
     public function getId();
-    public function getName();
-    public function getCreatedAt();
-    public function getUpdatedAt();
 }
