@@ -32,6 +32,7 @@ class ServiceProvider extends LaravelServiceProvider
                 Commands\ServiceMakeCommand::class,
                 Commands\ViewCrudMakeCommand::class,
                 Commands\ViewIndexMakeCommand::class,
+                Commands\EntityMakeCommand::class,
             ]);
         }
     }
