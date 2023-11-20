@@ -16,7 +16,6 @@ class EntityMakeCommand extends Command
         $this->call('make:repository-interface', ['name' => $this->argument('name') . 'RepositoryInterface']);
         $this->call('make:repository', ['name' => $this->argument('name') . 'Repository']);
         $this->call('make:repository-bindings', ['entity' => $this->argument('name')]);
-        $this->call('make:model-interface', ['name' => $this->argument('name').'Interface']);
         $this->call('make:model-eloquent', ['name' => $this->argument('name')]);
     }
 }
