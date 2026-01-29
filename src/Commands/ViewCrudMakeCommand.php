@@ -18,8 +18,6 @@ class ViewCrudMakeCommand extends Command
         $this->call('make:view-create', ['name' => $name]);
         $this->call('make:view-form', ['name' => $name]);
         $this->call('make:view-edit', ['name' => $name]);
-
-        return $this;
     }    
             
 }

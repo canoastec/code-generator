@@ -2,9 +2,10 @@
 
 namespace DummyNamespace;
 
-use Yajra\Oci8\Eloquent\OracleEloquent;
+use Illuminate\Database\Eloquent\Model;
 
-class DummyClass extends OracleEloquent
+class DummyClass extends Model
 {
     protected $table = "{{NameTable}}";
+    protected $guarded = ['id'];
 }

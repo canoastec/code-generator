@@ -1,9 +1,5 @@
 @extends('layout.default')
 
-@section('breadcrumb')
-	{{-- {!! Breadcrumbs::render('home') !!} --}}
-@stop
-
 @section('content')	
 
 @stop

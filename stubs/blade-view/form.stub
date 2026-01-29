@@ -4,3 +4,8 @@
 		{!! Form::text('input', null, ['class' => 'form-control']) !!}
 	</div>
 </div>
+@push('final-scripts')
+	<script>
+		
+	</script>
+@endpush
