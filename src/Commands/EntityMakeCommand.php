@@ -17,5 +17,6 @@ class EntityMakeCommand extends Command
         $this->call('make:repository', ['name' => $this->argument('name') . 'Repository']);
         $this->call('make:repository-bindings', ['entity' => $this->argument('name')]);
         $this->call('make:model-eloquent', ['name' => $this->argument('name')]);
+        $this->call('make:controller', ['name' => $this->argument('name') . 'Controller']);
     }
 }

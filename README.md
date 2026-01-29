@@ -24,7 +24,7 @@ php artisan make:repository NomeDoRepository
 ## BINDINGS DA REPOSITORY(InjectionServiceProvider.php)
 php artisan make:repository-bindings NomeDoEntity
 
-## REPOSITORY + MODEL + BINDING
+## REPOSITORY + MODEL + BINDING + CONTROLLER
 php artisan make:entity NomeDoEntity
 
 ## MODEL INTERFACE

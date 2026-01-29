@@ -20,7 +20,7 @@ class RepositoryBindingsMakeCommand extends GeneratorCommand
 
     protected function getStub()
     {
-        return app_path().'\Providers\InjectionServiceProvider.php';
+        return app_path().'/Providers/InjectionServiceProvider.php';
     }
 
     protected function buildClass($name)

@@ -3,6 +3,7 @@
 namespace CodeGenerator\Commands;
 
 use Illuminate\Console\GeneratorCommand;
+use Illuminate\Support\Str;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
@@ -36,7 +37,7 @@ class ModelEloquentMakeCommand extends GeneratorCommand
     protected function replaceNameTable(&$stub, $table)
     {
         if(empty($table))
-            $table = strtolower($this->argument('name'));
+            $table = Str::plural(Str::snake($this->argument('name')));
 
         $stub = str_replace('{{NameTable}}', $table, $stub);
 

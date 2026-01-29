@@ -1,9 +1,5 @@
 @extends('layout.templates.forms.create-panel', ['returnTo' => route('{{ModelRoute}}.index')])
 
-@section('breadcrumb')
-	{{-- {!! Breadcrumbs::render('{{ModelRoute}}.edit') !!} --}}
-@stop
-
 @section('form-open')
 	{!! Form::open(['route' => ['{{ModelRoute}}.update', request()->route('id')] , 'method' => 'POST']) !!}
 @stop
@@ -17,9 +13,3 @@
 @section('form-close')
 	{!! Form::close() !!}
 @stop
-
-@push('final-scripts')
-	<script>
-		
-	</script>
-@endpush
