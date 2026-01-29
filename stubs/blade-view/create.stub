@@ -1,4 +1,4 @@
-@extends ('layout.templates.forms.create-panel', ['returnTo' => route('{{ModelRoute}}.index')])
+@extends('layout.templates.forms.create-panel', ['returnTo' => route('{{ModelRoute}}.index')])
 
 @section('form-open')
 	{!! Form::open(['route' => '{{ModelRoute}}.store', 'method' => 'POST']) !!}
